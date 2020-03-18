@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mkdroid.filepicker">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+        <activity
+            android:name="mkdroid.filepicker.FilePickerActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name="mkdroid.filepicker.MediaDetailsActivity"
+            android:configChanges="orientation|screenSize"/>
+
+        <provider
+            android:name="mkdroid.filepicker.utils.FilePickerProvider"
+            android:authorities="${applicationId}.mkdroid.filepicker.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+    </application>
+
+</manifest>

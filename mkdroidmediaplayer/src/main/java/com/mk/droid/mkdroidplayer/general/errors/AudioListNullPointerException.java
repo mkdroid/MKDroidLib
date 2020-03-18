@@ -1,0 +1,12 @@
+package com.mk.droid.mkdroidplayer.general.errors;
+
+/**
+ * This is a custom exception thrown when the audio list is null or empty.
+ * Create by MKDroid on 12/03/20
+ * Jesus loves you.
+ */
+public class AudioListNullPointerException extends NullPointerException {
+    public AudioListNullPointerException() {
+        super("The playlist is empty or null");
+    }
+}
