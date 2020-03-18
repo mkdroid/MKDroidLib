@@ -13,10 +13,10 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/dropboxChooserSDK" />
             <option value="$PROJECT_DIR$/lib" />
+            <option value="$PROJECT_DIR$/mk-recorder" />
             <option value="$PROJECT_DIR$/mkdroidfilepicker" />
             <option value="$PROJECT_DIR$/mkdroidmediaplayer" />
             <option value="$PROJECT_DIR$/mkdroidrecorder" />
-            <option value="$PROJECT_DIR$/om-recorder" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

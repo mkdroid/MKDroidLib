@@ -1,2 +1,2 @@
 rootProject.name='MKDroidLib'
-include ':app', ':mkdroidrecorder', ':mkdroidmediaplayer', ':dropboxChooserSDK', ':mkdroidfilepicker', ':lib', ':om-recorder'
+include ':app', ':mkdroidrecorder', ':mkdroidmediaplayer', ':dropboxChooserSDK', ':mkdroidfilepicker', ':lib', ':mk-recorder'
