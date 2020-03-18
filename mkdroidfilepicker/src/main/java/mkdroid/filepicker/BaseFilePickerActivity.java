@@ -1,10 +1,9 @@
 package mkdroid.filepicker;
 
+import android.annotation.SuppressLint;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 
-import androidx.annotation.LayoutRes;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -16,7 +15,8 @@ import mkdroid.filepicker.utils.Orientation;
 
 public abstract class BaseFilePickerActivity extends AppCompatActivity {
 
-  protected void onCreate(@Nullable Bundle savedInstanceState, @LayoutRes int layout) {
+  @SuppressLint("SourceLockedOrientationActivity")
+  protected void onCreate(Bundle savedInstanceState, int layout) {
     super.onCreate(savedInstanceState);
     setTheme(PickerManager.getInstance().getTheme());
     setContentView(layout);

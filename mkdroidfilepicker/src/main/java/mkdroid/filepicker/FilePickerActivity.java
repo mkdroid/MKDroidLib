@@ -24,9 +24,11 @@ public class FilePickerActivity extends BaseFilePickerActivity
   private static final String TAG = FilePickerActivity.class.getSimpleName();
   private int type;
 
-  @Override protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState, R.layout.activity_file_picker);
+  @Override
+  protected void onCreate(Bundle savedInstanceState, int layout) {
+    super.onCreate(savedInstanceState, R.layout.activity_media_details);
   }
+
 
   @Override protected void initView() {
     Intent intent = getIntent();

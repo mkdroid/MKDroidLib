@@ -40,9 +40,11 @@ public class MediaDetailsActivity extends BaseFilePickerActivity implements File
   private MenuItem selectAllItem;
   private PhotoDirectory photoDirectory;
 
-  @Override protected void onCreate(Bundle savedInstanceState) {
+  @Override
+  protected void onCreate(Bundle savedInstanceState, int layout) {
     super.onCreate(savedInstanceState, R.layout.activity_media_details);
   }
+
 
   @Override protected void initView() {
     mGlideRequestManager = Glide.with(this);
