@@ -21,8 +21,6 @@ android {
     abortOnError false
   }
 }
-/*
-
 ext {
   // Where you will see your artifact in Bintray's web interface
   // The "bintrayName" should match the name of the Bintray repro.
@@ -36,17 +34,23 @@ ext {
   // module. The artifact name needs to match the name of the library.
   artifact = 'mk-recorder' // Has to be same as your library module name
 
+  // Your github repo link
+  siteUrl = ''
+  gitUrl = ''
 
   libraryDescription =
       'A fluent api wrapper of AudioRecord object to record Pcm & Wav file. There is a listner apis' +
           ' to have audio pulling and also silence detection.'
   libraryVersion = '1.1.5'
 
+  developerId = ''
+  developerName = ''
+  developerEmail = ''
+
   licenseName = 'The Apache Software License, Version 2.0'
   licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
   allLicenses = ["Apache-2.0"]
 }
-*/
 
 dependencies {
   implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -59,8 +63,8 @@ tasks.withType(Javadoc) {
   options.addStringOption('encoding', 'UTF-8')
 }
 
-//apply from: 'https://raw.githubusercontent.com/kailash09dabhi/JCenter/master/installv1.gradle'
-//apply from: 'https://raw.githubusercontent.com/kailash09dabhi/JCenter/master/bintrayv1.gradle'
+apply from: 'https://raw.githubusercontent.com/kailash09dabhi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/kailash09dabhi/JCenter/master/bintrayv1.gradle'
 repositories {
     mavenCentral()
 }
